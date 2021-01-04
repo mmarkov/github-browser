@@ -44,9 +44,28 @@ Then you may navigate to http://127.0.0.1:3001/api/users to see API response
 
 ## Client
 
+### Setup 
+
 Install npm dependencies:
 
 ```
 npm install
 ```
+
+### Development
+
+for convenience of development we are using webpack dev server which you can start with `npm start` 
+webpack dev server runs on http://localhost:3000 and calls backend run on http://localhost:3001
+As you modify source code in client folder it will reflect 
+
+### Packaging
+
+In order to package static files into webpack bundle please call `npm run dist` the output packaged to `server/static` and `server/templates` folders.
+
+## Deployment
+
+
+
+
+
 

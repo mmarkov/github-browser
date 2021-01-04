@@ -134,3 +134,8 @@ dmypy.json
 
 # NPM dependencies
 node_modules/
+
+# static files
+server/static/scripts/
+server/templates/
+dev/
