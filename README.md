@@ -64,7 +64,7 @@ In order to package static files into webpack bundle please call `npm run dist` 
 
 ## Deployment
 
-
+The easiest way to host simple flask/react app is Heroku, so we are going to deploy it there.
 
 
 

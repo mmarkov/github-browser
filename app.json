@@ -1,0 +1,18 @@
+{
+  "name": "Github browser",
+  "description": "Simple github users browser",
+  "keywords": [
+    "react",
+    "webpack",
+    "flask",
+    "python"
+  ],
+  "website": "https://github.com/markovmm/github-browser",
+  "repository": "https://github.com/markovmm/github-browser",
+  "env": {
+    "GUNICORN_PARAMS": { "value": "-c gunicorn.conf.py" },
+    "DATABASE_URL": { "value": "sqlite:///users.db" },
+    "NODE_ENV": { "value": "production" },
+    "NPM_CONFIG_PRODUCTION": { "value": "false" }
+  }
+}
