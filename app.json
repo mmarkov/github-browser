@@ -14,5 +14,13 @@
     "DATABASE_URL": { "value": "sqlite:///users.db" },
     "NODE_ENV": { "value": "production" },
     "NPM_CONFIG_PRODUCTION": { "value": "false" }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ]
 }
