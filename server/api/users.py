@@ -15,7 +15,11 @@ PER_PAGE = 25
 class UsersAPI(Resource):
     @staticmethod
     def get():
-        page = request.args.get('page', 1, False)
+        page = request.args.get('page', default=1)
+        try:
+            page = int(page)
+        except ValueError:
+            page = 1
         users_query = User.query.paginate(page, PER_PAGE)
         result = {
             'pages': {

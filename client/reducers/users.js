@@ -3,7 +3,6 @@ import * as actionTypes from '../actionTypes/users';
 const DEFAULT_STATE = [];
 
 const requestUsers = (state, action) => ([
-  ...state,
   ...action.users
 ]);
 
