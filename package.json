@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "test": "NODE_ENV=test BABEL_JEST_STAGE=0 jest",
     "dist": "NODE_ENV=production webpack -p",
-    "postinstall": "npm run dist"
+    "postinstall": "npm run dist && wget --output-document=server/users.db  https://www.dropbox.com/s/gyl9t6u0napmixm/users.db"
   },
   "repository": {
     "type": "git",
